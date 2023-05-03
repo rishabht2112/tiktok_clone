@@ -8,6 +8,7 @@
     - Add/Upload video
     - Messages
     - Sign out
+
 Technology used:
 Frontend : Flutter 
            - State Management - GetX

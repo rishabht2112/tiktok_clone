@@ -12,7 +12,8 @@
 Technology used:
 
  - MVC architecture
- - Frontend : Flutter State Management - GetX
+ - Frontend : Flutter 
+     - State Management - GetX
  - Backend : Firebase as a serveless backend, firestore to store the database
 
 How to run the app:

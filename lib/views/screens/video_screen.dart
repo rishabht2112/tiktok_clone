@@ -159,7 +159,7 @@ class VideoScreen extends StatelessWidget {
                                       onTap: () =>
                                           videoController.likeVideo(data.id),
                                       child: Icon(
-                                        Icons.favorite,
+                                        Icons.thumb_up,
                                         size: 40,
                                         color: data.likes.contains(
                                                 authController.user.uid)
@@ -183,7 +183,7 @@ class VideoScreen extends StatelessWidget {
                                       onTap: () =>
                                           videoController.dislikeVideo(data.id),
                                       child: Icon(
-                                        Icons.favorite,
+                                        Icons.thumb_down,
                                         size: 40,
                                         color: data.dislikes.contains(
                                             authController.user.uid)

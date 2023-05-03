@@ -180,6 +180,30 @@ class VideoScreen extends StatelessWidget {
                                 Column(
                                   children: [
                                     InkWell(
+                                      onTap: () =>
+                                          videoController.dislikeVideo(data.id),
+                                      child: Icon(
+                                        Icons.favorite,
+                                        size: 40,
+                                        color: data.dislikes.contains(
+                                            authController.user.uid)
+                                            ? Colors.red
+                                            : Colors.white,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 7),
+                                    Text(
+                                      data.dislikes.length.toString(),
+                                      style: const TextStyle(
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    InkWell(
                                       onTap: () => Navigator.of(context).push(
                                         MaterialPageRoute(
                                           builder: (context) => CommentScreen(
@@ -196,26 +220,6 @@ class VideoScreen extends StatelessWidget {
                                     const SizedBox(height: 7),
                                     Text(
                                       data.commentCount.toString(),
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    InkWell(
-                                      onTap: () {},
-                                      child: const Icon(
-                                        Icons.reply,
-                                        size: 40,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 7),
-                                    Text(
-                                      data.shareCount.toString(),
                                       style: const TextStyle(
                                         fontSize: 20,
                                         color: Colors.white,

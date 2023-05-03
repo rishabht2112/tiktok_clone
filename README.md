@@ -17,7 +17,7 @@ Backend : Firebase as a serveless backend, firestore to store the database
 How to run the app:
 
 Open the repo after forking from github from Android studio: 
-Run the : 
+- Run the : 
   flutter pub get in the terminal
 
-Followed by running the app on emulator using the run button in android studio by running the main.dart file.
+- Followed by running the app on emulator using the run button in android studio by running the main.dart file.
